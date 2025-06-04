@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pato.Net</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0d1b2a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #00ffff;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: #f0f0f0;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+.hero {
+  background: linear-gradient(to right, #000, #0d1b2a);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero img {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.hero a {
+  padding: 0.8rem 1.5rem;
+  background-color: #00bcd4;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero a:hover {
+  background-color: #00ffff;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.acervo {
+  background-color: #0d1b2a;
+}
+
+.acervo h3, .sobre h3, .contato h3 {
+  font-size: 1.5rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #1b263b;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+footer {
+  background-color: #0d1b2a;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+  nav a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pato.Net</h1>
+    <nav>
+      <a href="#acervo">Acervo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>  <section class="hero">
+    <img src="pato-logo.png" alt="Pato Hacker Logo" />
+    <h2>Seu acervo secreto de conteúdos gratuitos</h2>
+    <p>Descubra cursos, filmes e aplicativos pagos disponíveis gratuitamente. Navegue por um acervo único e atualizado.</p>
+    <a href="#acervo">Explorar Agora</a>
+  </section>  <section class="acervo" id="acervo">
+    <h3>Acervo em Destaque</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4>Curso de JavaScript</h4>
+        <p>Curso completo do básico ao avançado.</p>
+      </div>
+      <div class="card">
+        <h4>App de Edição Pro</h4>
+        <p>Aplicativo premium desbloqueado para Android.</p>
+      </div>
+      <div class="card">
+        <h4>Filme: Matrix HD</h4>
+        <p>Download direto em qualidade alta.</p>
+      </div>
+    </div>
+  </section>  <section class="sobre" id="sobre">
+    <h3>Sobre o Pato.Net</h3>
+    <p>Pato.Net é um projeto independente que reúne links e informações de cursos, filmes, apps e outros conteúdos distribuídos gratuitamente pela internet. Aqui, você encontra acesso rápido e organizado ao que há de melhor — sem enrolação e com aquele toque underground.</p>
+  </section>  <section class="contato" id="contato">
+    <h3>Contato</h3>
+    <p>Entre em contato conosco pelo <a href="#" style="color:#00ffff; text-decoration: underline;">Telegram</a> ou envie um e-mail para <strong>contato@pato.net</strong>.</p>
+  </section>  <footer>
+    <p>&copy; 2025 Pato.Net - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
